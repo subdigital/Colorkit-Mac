@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B58378AD213F327300A8BF7E /* Colorkit_Mac.h in Headers */ = {isa = PBXBuildFile; fileRef = B58378AB213F327300A8BF7E /* Colorkit_Mac.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B58378B5213F32B400A8BF7E /* Colorkit.h in Headers */ = {isa = PBXBuildFile; fileRef = B58378B3213F32B400A8BF7E /* Colorkit.h */; };
+		B58378B6213F32B400A8BF7E /* Colorkit.m in Sources */ = {isa = PBXBuildFile; fileRef = B58378B4213F32B400A8BF7E /* Colorkit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B58378A8213F327300A8BF7E /* Colorkit_Mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Colorkit_Mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B58378AB213F327300A8BF7E /* Colorkit_Mac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Colorkit_Mac.h; sourceTree = "<group>"; };
 		B58378AC213F327300A8BF7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B58378B3213F32B400A8BF7E /* Colorkit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Colorkit.h; sourceTree = "<group>"; };
+		B58378B4213F32B400A8BF7E /* Colorkit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Colorkit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,7 +32,8 @@
 		B583789E213F327300A8BF7E = {
 			isa = PBXGroup;
 			children = (
-				B58378AA213F327300A8BF7E /* Colorkit-Mac */,
+				B58378B7213F355E00A8BF7E /* Supporting Files */,
+				B58378AA213F327300A8BF7E /* Classes */,
 				B58378A9213F327300A8BF7E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,13 +46,21 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B58378AA213F327300A8BF7E /* Colorkit-Mac */ = {
+		B58378AA213F327300A8BF7E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				B58378AB213F327300A8BF7E /* Colorkit_Mac.h */,
+				B58378B3213F32B400A8BF7E /* Colorkit.h */,
+				B58378B4213F32B400A8BF7E /* Colorkit.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B58378B7213F355E00A8BF7E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				B58378AC213F327300A8BF7E /* Info.plist */,
 			);
-			path = "Colorkit-Mac";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,7 +70,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B58378AD213F327300A8BF7E /* Colorkit_Mac.h in Headers */,
+				B58378B5213F32B400A8BF7E /* Colorkit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B58378B6213F32B400A8BF7E /* Colorkit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +275,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Colorkit-Mac/Info.plist";
+				INFOPLIST_FILE = "Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -288,7 +300,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Colorkit-Mac/Info.plist";
+				INFOPLIST_FILE = "Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
